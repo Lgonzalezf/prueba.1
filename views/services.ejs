@@ -1,0 +1,25 @@
+<%include includes/header.ejs%>
+<%include includes/navbar.ejs%>
+
+<div class="container theme-showcase" role="main">
+    <div class="container">
+
+        <ul>
+
+            <% for(var i=0; i<services.length; i++) {%>
+
+            <li class="well"><%= services[i].name %>
+            <p><%= services[i].description %><br>
+            <%= services[i].price_range %></p>
+            <% } %>
+
+
+
+        </ul>
+        </div>
+
+        <hr>
+
+
+<%include includes/footer.ejs%>
+
